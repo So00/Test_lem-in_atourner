@@ -1,0 +1,26 @@
+#7
+#7
+5
+##start
+start 23 3
+##end
+end 16 7
+#commentaire
+short1 16 5
+##mew
+long2 5 6
+long0 16 18
+short0 16 3
+long1 16 9
+long3 10 11
+long4 4 8
+start-short0
+##yo
+long4-end
+long1-long2
+long2-long3
+short1-end
+long3-long4
+short0-short1
+long0-long1
+long0-start
