@@ -6,7 +6,7 @@
 	do
 		rm -rf ant
 		sed -e '1,2d' $file > act
-		../lem-in < act > ant;
+		../lem-in < act | grep '^L' > ant;
 		./validity $file < $file
 	done
 	rm -rf act
