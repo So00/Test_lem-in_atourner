@@ -5,7 +5,7 @@
 	for file in $list_file
 	do
 		sed -e '1,2d' $file > act
-		../lem-in < act | grep '^L' | ./normal $file
+		../lem-in < act 2>&1 | grep '^L\|^ERROR' | ./normal $file
 		if test -z $1
 		then
 			RETVAL=`valgrind --log-fd=1 ../lem-in < valid_map/valid_map01 | grep "definitely lost"`
